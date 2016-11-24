@@ -10,9 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/cljs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/cljs-mobile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/clj" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dev-resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/resources" />
       <excludeFolder url="file://$MODULE_DIR$/resources/public/js" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

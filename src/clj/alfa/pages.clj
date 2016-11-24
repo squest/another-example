@@ -3,6 +3,51 @@
     [hiccup.core :as hc]
     [hiccup.page :as hp]))
 
+(defn spa []
+  (hp/html5
+    [:head
+     (hp/include-css "/css/normalize.css")
+     (hp/include-css "/css/skeleton.css")]
+    [:body
+     [:div {:id "app"}]
+     (hp/include-js "/js/app.js")]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (defn links []
   [{:link "/" :text "Home"}
    {:link "/sayhi/dodol" :text "Say hi to dodol"}

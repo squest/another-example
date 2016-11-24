@@ -5,18 +5,53 @@
     [com.stuartsierra.component :as component]
     [alfa.pages :as page]))
 
-(declare main-routes)
+(declare main-routes spa-routes)
 
 (defrecord Handler []
   component/Lifecycle
   (start [this]
     (assoc this
-      :routes (main-routes)))
+      :routes (spa-routes)))
   (stop [this]
     (dissoc this :routes)))
 
 (defn make []
   (map->Handler {}))
+
+;;  IMPLEMENTATIONS
+
+(defn spa-routes
+  []
+  (routes
+    (GET "/" req (page/spa))
+    (croute/resources "/")
+    (croute/not-found "Not found dudes")))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (defn main-routes
   []
